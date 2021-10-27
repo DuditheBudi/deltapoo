@@ -367,8 +367,8 @@ function scr_monstersetup() {
 	if global.monstertype[myself] == 109 {
 		
 		global.monstername[myself] = stringsetloc("Annoying Dog", "scr_monstersetup_slash_scr_monstersetup_gml_244_0")
-        global.monstermaxhp[myself] = 99999
-        global.monsterhp[myself] = 99999
+        global.monstermaxhp[myself] = 600
+        global.monsterhp[myself] = 600
         global.monsterat[myself] = 10
         global.monsterdf[myself] = 0
         global.monsterexp[myself] = 0

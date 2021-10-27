@@ -6,4 +6,4 @@
 //scr_makecaterpillar(obj_mainchara.x, obj_mainchara.y, 8, 6)
 
 //scr_setmainchar("kris")
-scr_makecaterpillar(obj_mainchara.x, obj_mainchara.y, 4, 0)
+//scr_makecaterpillar(obj_mainchara.x, obj_mainchara.y, 4, 0)
