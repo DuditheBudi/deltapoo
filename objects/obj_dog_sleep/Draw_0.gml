@@ -1,1 +1,3 @@
-draw_sprite(sprite_index, image_index, maxx / 2, maxy - (sprite_height - 3))
+maxx = (obj_growtangle.x - 200)
+maxy = obj_growtangle.y
+draw_sprite(sprite_index, image_index, maxx, (maxy - (sprite_height - 3)))

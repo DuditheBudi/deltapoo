@@ -171,7 +171,9 @@ if type = 1011 {
 	
 	if made = 0 {
 		
-		d = instance_create(maxx / 2, maxy, obj_dog_sleep)
+		maxx = (obj_growtangle.x - 200)
+		maxy = obj_growtangle.y
+		d = instance_create(maxx, maxy, obj_dog_sleep)
 		d.damage = damage
 		d.target = target
 		made = 1
