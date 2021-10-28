@@ -6,3 +6,4 @@ idlesprite = spr_dog_idle
 hurtsprite = spr_dog_idle
 sparedsprite = spr_dog_sleep
 custom_draw_example = 1
+happiness = 0

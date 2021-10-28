@@ -75,8 +75,9 @@ if (global.myfight == 3)
 	if acting = 2 and actcon = 0 {
 		
 		actcon = 1
-		msgset(0, "* You tried to escape, but a dog blocked the way./%")
+		msgset(0, "* You gave the dog some affection. It enjoyed it!/%")
 		scr_battletext_default()
+		scr_mercyadd(myself, 30)
 	}
     if ((actingsus == true && actconsus == 1) || (actingral == true && actconral == 1))
     {

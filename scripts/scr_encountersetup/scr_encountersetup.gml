@@ -379,7 +379,7 @@ function scr_monstersetup() {
         global.canact[myself][0] = true
         global.actname[myself][0] = stringsetloc("Check", "scr_monstersetup_slash_scr_monstersetup_gml_255_0")
         global.canact[myself][1] = true
-		global.actname[myself][1] = "Flee"
+		global.actname[myself][1] = "Give Affection"
 	}
 	
 	if (global.monstertype[myself] == 126)
