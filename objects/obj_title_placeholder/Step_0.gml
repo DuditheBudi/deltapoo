@@ -7,11 +7,11 @@ if button1_p()
     if (choice_index == 0)
     {
 		
-		scr_debug_print("no")
+		//scr_debug_print("no")
 		
-        //var menu_go = 0
-        //var roomchoice = room_intro_ch2
-        //var CH = string(global.chapter)
+        var menu_go = 0
+        var roomchoice = room_intro_ch2
+        var CH = string(global.chapter)
         //if ossafe_file_exists((("filech" + CH) + "_0"))
         //    menu_go = 1
         //if ossafe_file_exists((("filech" + CH) + "_1"))
@@ -32,13 +32,13 @@ if button1_p()
         //    roomchoice = room_intro_ch2
         //if (menu_go == 2)
         //{
-        //    scr_windowcaption("DELTARUNE")
-        //    global.tempflag[10] = 1
+            scr_windowcaption("DELTARUNE")
+            global.tempflag[10] = 1
         //    roomchoice = 233
-        //    global.plot = 0
+            global.plot = 0
         //}
-        //global.darkzone = 0
-        //room_goto(roomchoice)
+        global.darkzone = 0
+        room_goto(roomchoice)
     }
     else if (choice_index == 1)
         room_goto_next()
@@ -46,15 +46,18 @@ if button1_p()
         room_goto(room_battletest)//scr_load()
     else if (choice_index == 3)
     {
-        if ossafe_file_exists("filech1_3")
-        {
-            global.filechoice = 3
-            scr_load_chapter1()
-            global.filechoice = 0
-            global.darkzone = 0
-            room_goto(room_krisroom)
-        }
-        else
-            snd_play(snd_error)
+		global.filechoice = 0
+		scr_windowcaption("DELTARUNE")
+		scr_load()
+        //if ossafe_file_exists("filech1_3")
+        //{
+        //    global.filechoice = 3
+        //    scr_load_chapter1()
+        //    global.filechoice = 0
+        //    global.darkzone = 0
+        //    room_goto(room_krisroom)
+        //}
+        //else
+        //    snd_play(snd_error)
     }
 }
