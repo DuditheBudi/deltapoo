@@ -457,3 +457,16 @@ if (type == 14)
             d.friction = -0.15
     }
 }
+
+if (type == 242) {
+	maxx = (obj_growtangle.x + 200)
+	maxy = (obj_growtangle.y - 300)
+	if spawnyt == 0 {
+		instance_create(maxx, maxy, obj_dee_hat)
+		spawnyt = 1
+	}
+	if btimer >= 18 {
+		btimer = 0
+		instance_create(obj_dee_hat.x, obj_dee_hat.y, obj_deenut)
+	}
+}

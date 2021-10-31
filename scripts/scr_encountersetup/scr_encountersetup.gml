@@ -122,6 +122,14 @@ function scr_encountersetup(encounter ) {
             global.monstermakey[2] = (yy + 250)
             global.battlemsg[0] = stringsetloc("* Pipis.", "scr_encountersetup_slash_scr_encountersetup_gml_1462_0")
             break	
+
+		case 250:
+			global.monsterinstancetype[0] = obj_dee_enemy
+			 global.monstertype[0] = 250
+            global.monstermakex[0] = (xx + 480)
+            global.monstermakey[0] = (yy + 150)
+			global.battlemsg[0] = "* Dee dees into battle!"
+			break
 		
 		default:
 
@@ -380,6 +388,24 @@ function scr_monstersetup() {
         global.actname[myself][0] = stringsetloc("Check", "scr_monstersetup_slash_scr_monstersetup_gml_255_0")
         global.canact[myself][1] = true
 		global.actname[myself][1] = "Give Affection"
+	}
+
+	if global.monstertype[myself] == 250 {
+		
+		global.monstername[myself] = stringsetloc("Dee", "scr_monstersetup_slash_scr_monstersetup_gml_244_0")
+        global.monstermaxhp[myself] = 600
+        global.monsterhp[myself] = 600
+        global.monsterat[myself] = 10
+        global.monsterdf[myself] = 0
+        global.monsterexp[myself] = 0
+        global.monstergold[myself] = 1
+        global.sparepoint[myself] = 1
+        global.mercymod[myself] = 0
+        global.mercymax[myself] = 100
+        global.canact[myself][0] = true
+        global.actname[myself][0] = stringsetloc("Check", "scr_monstersetup_slash_scr_monstersetup_gml_255_0")
+        global.canact[myself][1] = true
+		global.actname[myself][1] = "Talk"
 	}
 	
 	if (global.monstertype[myself] == 126)

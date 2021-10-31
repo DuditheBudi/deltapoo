@@ -27,3 +27,4 @@ maxy = 999
 maxx = 999
 miny = 999
 creator = 0
+spawnyt = 0
